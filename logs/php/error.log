@@ -1,0 +1,7 @@
+[15-Apr-2024 18:49:13 UTC] PHP Warning:  require(C:\Users\Andreas\Local Sites\webthinker-probeaufgaben\app\public/wp-includes/option.php): Failed to open stream: No such file or directory in C:\Users\Andreas\Local Sites\webthinker-probeaufgaben\app\public\wp-includes\functions.php on line 8
+[15-Apr-2024 18:49:13 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\Users\Andreas\Local Sites\webthinker-probeaufgaben\app\public/wp-includes/option.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\Andreas\Local Sites\webthinker-probeaufgaben\app\public\wp-includes\functions.php:8
+Stack trace:
+#0 C:\Users\Andreas\Local Sites\webthinker-probeaufgaben\app\public\wp-load.php(73): require_once()
+#1 C:\Users\Andreas\Local Sites\webthinker-probeaufgaben\app\public\wp-login.php(12): require('C:\\Users\\Andrea...')
+#2 {main}
+  thrown in C:\Users\Andreas\Local Sites\webthinker-probeaufgaben\app\public\wp-includes\functions.php on line 8
