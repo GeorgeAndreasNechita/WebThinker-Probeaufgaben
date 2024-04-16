@@ -1,0 +1,9 @@
+{
+	"version": 2,
+	"styles": {
+		"color": {
+			"text": "green",
+			"background": "#f5f1ea"
+		}
+	}
+}
