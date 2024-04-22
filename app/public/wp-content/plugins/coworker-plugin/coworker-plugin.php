@@ -1,6 +1,9 @@
 <?php
 /*
  * Plugin Name: Coworker Plugin
+ * Description: A custom plugin for adding a new post of type coworker and showing it in the frontend
+ * Version: 1.0
+ * Author: George Andreas Nechita
  */
 
 // Register custom post type for coworker
