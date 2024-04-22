@@ -2,6 +2,7 @@
 /*
  * Plugin Name: Coworker Plugin
  */
+
 // Register custom post type for coworker
 function register_coworker_post_type() {
   $labels = array(
@@ -34,7 +35,7 @@ function register_coworker_post_type() {
       'has_archive'        => true,
       'hierarchical'       => false,
       'menu_position'      => null,
-      'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'custom-fields' ),
+      'supports'           => array( 'title', 'editor', 'author', 'thumbnail', ),
   );
 
   register_post_type( 'coworker', $args );
@@ -63,16 +64,16 @@ function coworker_fields_callback( $post ) {
   $email = get_post_meta( $post->ID, '_coworker_email', true );
 
   echo '<p><label for="coworker_name">' . __( 'Name', 'textdomain' ) . '</label>';
-  echo '<input type="text" id="coworker_name" name="coworker_name" value="' . esc_attr( $name ) . '" size="25" /></p>';
+  echo '<input type="text" id="coworker_name" name="coworker_name" value="' . esc_attr( $name ) . '" size="25"  style="margin-left: 20px;" /></p>';
 
   echo '<p><label for="coworker_surname">' . __( 'Surname', 'textdomain' ) . '</label>';
-  echo '<input type="text" id="coworker_surname" name="coworker_surname" value="' . esc_attr( $surname ) . '" size="25" /></p>';
+  echo '<input type="text" id="coworker_surname" name="coworker_surname" value="' . esc_attr( $surname ) . '" size="25"  style="margin-left: 20px;" /></p>';
 
   echo '<p><label for="coworker_phone">' . __( 'Phone', 'textdomain' ) . '</label>';
-  echo '<input type="text" id="coworker_phone" name="coworker_phone" value="' . esc_attr( $phone ) . '" size="25" /></p>';
+  echo '<input type="text" id="coworker_phone" name="coworker_phone" value="' . esc_attr( $phone ) . '" size="25"  style="margin-left: 20px;" /></p>';
 
   echo '<p><label for="coworker_email">' . __( 'Email', 'textdomain' ) . '</label>';
-  echo '<input type="text" id="coworker_email" name="coworker_email" value="' . esc_attr( $email ) . '" size="25" /></p>';
+  echo '<input type="text" id="coworker_email" name="coworker_email" value="' . esc_attr( $email ) . '" size="25"  style="margin-left: 20px;" /></p>';
 }
 
 // Save custom field data for coworker
